@@ -1,5 +1,5 @@
 FROM node:latest
 COPY . /opt
 WORKDIR /opt
-RUN npm install
+ENTRYPOINT npm install
 CMD ["npm", "start"]
